@@ -1,13 +1,9 @@
 # CaptureC
 
-# This script performs the analysis of a Capture-C experiment. It takes as input the aligned sam file, the oligo file (CCanalyser format), and a file with the
-# coordinates of all the restriction fragments in the genome of the restriction enzyme used for digestion (format chr:start-stop\n).
-# For more info on file formats and how to generate these, see http://userweb.molbiol.ox.ac.uk/public/telenius/captureManual/UserManualforCaptureCanalysis.pdf.
+# This script performs the analysis of a Capture-C experiment. It takes as input the aligned sam file, the oligo file (CCanalyser format), and a file with the coordinates of all the restriction fragments in the genome of the restriction enzyme used for digestion (format chr:start-stop\n).For more info on file formats and how to generate these, see http://userweb.molbiol.ox.ac.uk/public/telenius/captureManual/UserManualforCaptureCanalysis.pdf.
 
 # The script analyses the sam file and filters out:
-# 1. Duplicate reads. For flashed reads duplicate removal is based on a unique start and stop of all mapped fragments; for non-flashed reads only the start of the
-#    two separate reads is considered and needs to be unique. The script has an option for more stringent analysis, in which reads with only 1 (-stringent 1) or
-#    2 (-stringent 2) differences are also removed.
+# 1. Duplicate reads. For flashed reads duplicate removal is based on a unique start and stop of all mapped fragments; for non-flashed reads only the start of the two separate reads is considered and needs to be unique. The script has an option for more stringent analysis, in which reads with only 1 (-stringent 1) or 2 (-stringent 2) differences are also removed.
 # 2. Proximity exclusion. All mapped restriction fragments that fall within a 1kb window from any of the viewpoints used will be removed.
 # The remaining read fragments are considered reporters and are mapped to the corresponding restriction fragments. 
 # The script contains a 'globin option' to combine the separate globin tracks into a combined track.
