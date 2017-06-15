@@ -20,8 +20,7 @@
 # 3. Oligo-specific wig file
 # 4. Oligo-specific gff file
 
-# The script takes 5-10 min to run when using the default duplicate filtering. Stringent duplicate filtering is very slow and will take overnight for samples
-# sequenced on a miseq (sam file up to 3 Gb). This is probably only required when low cell numbers are used. 
+# The script takes 5-10 min to run when using the default duplicate filtering. Stringent duplicate filtering is very slow and will take overnight for samples sequenced on a miseq (sam file up to 3 Gb). This is probably only required when low cell numbers are used. 
 
 # Example of run command:
 # module load ucsctools
